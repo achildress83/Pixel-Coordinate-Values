@@ -28,7 +28,7 @@ class Rectangle():
         y_coords = np.linspace(bottom_left[1], top_right[1], num=self.cols)
         return x_coords, y_coords
 
-    # gets all combinations of x and y coordinates
+    # gets all combinations of x and y coordinates, converts to shape (m, n, 2) matrix and outputs as list
     def create_matrix(self):
         '''input: takes output from create_coords (x_coords and y_coords)
         output: returns solution (all equally spaced points in rectangle)'''
