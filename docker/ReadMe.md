@@ -24,7 +24,7 @@ Please make sure you install docker on your OS environment.
 
 ## How to run
 
-docker-compose up
+docker-compose up\n
 runs on http://localhost:5000/ (make sure that this is the url used)
 
 ## Input structure
