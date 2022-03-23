@@ -2,7 +2,7 @@
 Write a program that calculates pixel coordinate values 
 for an image that is to be displayed on a two dimensional 
 surface given the dimensions of the image and the corner 
-points of the image as it is to be displayed.
+points of the image.
 
 **Output:** Program calculates and returns the x and y coordinates 
 at which to plot each pixel in the input image such that 
