@@ -9,7 +9,7 @@ class Rectangle():
         self.rows = image_dimensions[0]
         self.cols = image_dimensions[1]
 
-    # sort corner_points
+    # sorts corner_points input to define the rectangle
     def sort_corner_points(self):
         '''input: takes a list of tuples representing the four corners of the rectangle
             output: returns top right and bottom left coordinates'''
@@ -18,6 +18,7 @@ class Rectangle():
         top_right = corner_points_sorted[-1]
         return bottom_left, top_right
 
+    # gets all equally spaced x and y coordinate values as independent arrays
     def create_coords(self):
         '''input: takes output from sort_corner_points (bottom left and top right coordinates)
             output: returns separate arrays of x and y coordinates
@@ -27,7 +28,7 @@ class Rectangle():
         y_coords = np.linspace(bottom_left[1], top_right[1], num=self.cols)
         return x_coords, y_coords
 
-    # pass row and col attributes to method (to do)
+    # gets all combinations of x and y coordinates
     def create_matrix(self):
         '''input: takes output from create_coords (x_coords and y_coords)
         output: returns solution (all equally spaced points in rectangle)'''
